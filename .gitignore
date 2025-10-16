@@ -35,6 +35,10 @@ ENV/
 # MCPB
 *.mcpb
 
+# Markdown files (except README.md)
+*.md
+!README.md
+
 # OS
 .DS_Store
 Thumbs.db

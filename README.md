@@ -30,55 +30,11 @@ A bioinformatics MCP (Model Context Protocol) server built with FastMCP and Biop
 
 ## Installation
 
-### Method 1: MCPB Bundle (Recommended)
-
-1. Download the `.mcpb` file from the releases page
+1. Download the `.mcpb` file from the [releases page](https://github.com/jessicalh/biosciences-mcp/releases)
 2. Open Claude Desktop
 3. Navigate to Settings > Extensions
 4. Click "Install Extension..." and select the `.mcpb` file
 5. Restart Claude Desktop
-
-### Method 2: Manual Configuration
-
-1. Clone or download this repository
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Configure Claude Desktop by editing `claude_desktop_config.json`:
-
-   **Using uv (recommended):**
-   ```json
-   {
-     "mcpServers": {
-       "biosciences": {
-         "command": "uv",
-         "args": [
-           "run",
-           "--with", "fastmcp",
-           "--with", "biopython",
-           "fastmcp", "run",
-           "/path/to/biosciences-mcp/server/main.py"
-         ]
-       }
-     }
-   }
-   ```
-
-   **Using Python directly:**
-   ```json
-   {
-     "mcpServers": {
-       "biosciences": {
-         "command": "python",
-         "args": ["/path/to/biosciences-mcp/server/main.py"]
-       }
-     }
-   }
-   ```
-
-4. Restart Claude Desktop
 
 ## Usage Examples
 
@@ -122,27 +78,6 @@ Once installed, you can ask Claude to perform bioinformatics tasks naturally:
 | `ncbi_blast_search` | Search NCBI databases |
 | `calculate_sequence_distance` | Calculate sequence similarity |
 
-## Building the MCPB Bundle
-
-To create your own `.mcpb` bundle:
-
-1. Install the MCPB CLI:
-   ```bash
-   npm install -g @anthropic-ai/mcpb
-   ```
-
-2. Navigate to this directory:
-   ```bash
-   cd biosciences-mcp
-   ```
-
-3. Pack the bundle:
-   ```bash
-   mcpb pack
-   ```
-
-This will create `biosciences-toolkit.mcpb` that can be shared and installed.
-
 ## Requirements
 
 - Python 3.8 or higher
@@ -157,19 +92,9 @@ This will create `biosciences-toolkit.mcpb` that can be shared and installed.
 
 ## Troubleshooting
 
-### Server not appearing in Claude Desktop
-1. Check that Claude Desktop has been restarted
-2. Verify the path in `claude_desktop_config.json` is correct
-3. Ensure Python and dependencies are properly installed
-
-### Tool execution errors
-1. Verify sequence format (DNA should contain only ATCG, RNA: AUCG, Protein: standard amino acids)
-2. Check that sequences are valid for the operation (e.g., no stop codons for translation)
-3. For BLAST searches, ensure you have internet connectivity
-
-### Permission errors
-- On Windows, ensure the Python script has execute permissions
-- On Unix systems, you may need to make the script executable: `chmod +x server/main.py`
+- Ensure Claude Desktop has been restarted after installation
+- For BLAST searches, internet connectivity is required
+- Sequence format requirements: DNA (ATCG), RNA (AUCG), Protein (standard amino acids)
 
 ## Status
 
