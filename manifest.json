@@ -6,9 +6,9 @@
   "description": "Comprehensive bioinformatics tools for sequence analysis, protein analysis, and molecular biology",
   "long_description": "This MCP server provides a complete suite of bioinformatics tools built on Biopython and other popular Python libraries. Features include DNA/RNA sequence analysis, protein characterization, sequence alignment, ORF finding, BLAST searches, and more. Perfect for genomics research, computational biology, and bioinformatics workflows.",
   "author": {
-    "name": "Bioinformatics Community",
-    "email": "support@example.com",
-    "url": "https://github.com/your-repo/biosciences-mcp"
+    "name": "Jessica LH",
+    "email": "jessicalh@github.com",
+    "url": "https://github.com/jessicalh/biosciences-mcp"
   },
   "server": {
     "type": "python",
@@ -95,9 +95,9 @@
     }
   },
   "user_config": {},
-  "homepage": "https://github.com/your-repo/biosciences-mcp",
+  "homepage": "https://github.com/jessicalh/biosciences-mcp",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-repo/biosciences-mcp"
+    "url": "https://github.com/jessicalh/biosciences-mcp"
   }
 }
