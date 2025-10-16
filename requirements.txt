@@ -1,0 +1,10 @@
+# Core MCP Framework
+fastmcp>=0.3.0
+
+# Bioinformatics Libraries
+biopython>=1.85
+
+# Optional: Additional bioinformatics tools
+# pandas>=2.0.0
+# numpy>=1.24.0
+# scipy>=1.10.0

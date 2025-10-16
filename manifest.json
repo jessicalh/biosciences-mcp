@@ -1,0 +1,103 @@
+{
+  "manifest_version": "0.2",
+  "name": "biosciences-toolkit",
+  "display_name": "Biosciences Toolkit",
+  "version": "1.0.0",
+  "description": "Comprehensive bioinformatics tools for sequence analysis, protein analysis, and molecular biology",
+  "long_description": "This MCP server provides a complete suite of bioinformatics tools built on Biopython and other popular Python libraries. Features include DNA/RNA sequence analysis, protein characterization, sequence alignment, ORF finding, BLAST searches, and more. Perfect for genomics research, computational biology, and bioinformatics workflows.",
+  "author": {
+    "name": "Bioinformatics Community",
+    "email": "support@example.com",
+    "url": "https://github.com/your-repo/biosciences-mcp"
+  },
+  "server": {
+    "type": "python",
+    "entry_point": "server/main.py",
+    "mcp_config": {
+      "command": "python",
+      "args": [
+        "${__dirname}/server/main.py"
+      ],
+      "env": {
+        "PYTHONPATH": "${__dirname}/server"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "reverse_complement",
+      "description": "Returns the reverse complement of a DNA or RNA sequence"
+    },
+    {
+      "name": "transcribe",
+      "description": "Transcribes a DNA sequence to RNA"
+    },
+    {
+      "name": "translate",
+      "description": "Translates a DNA or RNA sequence to protein"
+    },
+    {
+      "name": "gc_content",
+      "description": "Calculates GC content percentage of a sequence"
+    },
+    {
+      "name": "molecular_weight",
+      "description": "Calculates molecular weight of DNA, RNA, or protein"
+    },
+    {
+      "name": "protein_analysis",
+      "description": "Comprehensive protein analysis including MW, pI, instability, secondary structure"
+    },
+    {
+      "name": "convert_sequence_format",
+      "description": "Converts between sequence file formats (FASTA, GenBank, EMBL, etc.)"
+    },
+    {
+      "name": "find_motif",
+      "description": "Finds all occurrences of a motif in a sequence"
+    },
+    {
+      "name": "find_orfs",
+      "description": "Finds Open Reading Frames in a DNA sequence"
+    },
+    {
+      "name": "pairwise_alignment",
+      "description": "Performs global or local pairwise sequence alignment"
+    },
+    {
+      "name": "ncbi_blast_search",
+      "description": "Performs NCBI BLAST search for sequence similarity"
+    },
+    {
+      "name": "calculate_sequence_distance",
+      "description": "Calculates Hamming distance between two sequences"
+    }
+  ],
+  "keywords": [
+    "bioinformatics",
+    "genomics",
+    "proteomics",
+    "sequence-analysis",
+    "biopython",
+    "molecular-biology",
+    "dna",
+    "rna",
+    "protein",
+    "blast",
+    "alignment"
+  ],
+  "license": "MIT",
+  "compatibility": {
+    "claude_desktop": ">=0.10.0",
+    "platforms": ["darwin", "win32", "linux"],
+    "runtimes": {
+      "python": ">=3.8,<4.0"
+    }
+  },
+  "user_config": {},
+  "homepage": "https://github.com/your-repo/biosciences-mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-repo/biosciences-mcp"
+  }
+}
