@@ -1,6 +1,8 @@
 # Biosciences Toolkit MCP Server
 
-A comprehensive bioinformatics MCP (Model Context Protocol) server that provides powerful sequence analysis, protein characterization, and molecular biology tools directly to Claude Desktop.
+**Alpha version - tested locally only**
+
+A bioinformatics MCP (Model Context Protocol) server built with FastMCP and Biopython. Provides sequence analysis and molecular biology tools for Claude Desktop.
 
 ## Features
 
@@ -150,9 +152,8 @@ This will create `biosciences-toolkit.mcpb` that can be shared and installed.
 
 ## Dependencies
 
-The server uses the following Python libraries:
-- **FastMCP**: MCP server framework
-- **Biopython**: Core bioinformatics toolkit
+- **FastMCP** (>=0.3.0): MCP server framework
+- **Biopython** (>=1.85): Sequence analysis and bioinformatics toolkit
 
 ## Troubleshooting
 
@@ -170,29 +171,16 @@ The server uses the following Python libraries:
 - On Windows, ensure the Python script has execute permissions
 - On Unix systems, you may need to make the script executable: `chmod +x server/main.py`
 
-## Contributing
+## Status
 
-Contributions are welcome! Some ideas for enhancements:
-- Add support for multiple sequence alignment
-- Integrate more genomics databases
-- Add phylogenetic tree building
-- Support for structural biology tools
-- Integration with visualization libraries
+This is an alpha version tested locally. Use at your own risk.
 
 ## License
 
 MIT License - see LICENSE file for details
 
-## Acknowledgments
+## Built With
 
-Built with:
-- [Biopython](https://biopython.org/) - The foundation of bioinformatics in Python
-- [FastMCP](https://github.com/jlowin/fastmcp) - Making MCP servers fast and simple
-- [Model Context Protocol](https://modelcontextprotocol.io/) - Anthropic's protocol for AI-tool integration
-
-## Support
-
-For issues, questions, or suggestions:
-- Open an issue on GitHub
-- Check the documentation at the MCP website
-- Review Biopython documentation for sequence analysis details
+- [Biopython](https://biopython.org/)
+- [FastMCP](https://github.com/jlowin/fastmcp)
+- [Model Context Protocol](https://modelcontextprotocol.io/)

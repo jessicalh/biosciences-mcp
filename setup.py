@@ -13,16 +13,16 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 
 setup(
     name="biosciences-mcp",
-    version="1.0.0",
-    author="Jessica LH",
-    author_email="jessicalh@github.com",
-    description="Comprehensive bioinformatics tools for sequence analysis, protein analysis, and molecular biology",
+    version="0.1.0a1",
+    author="Jessica H",
+    author_email="ke7gad@gmail.com",
+    description="Alpha version bioinformatics MCP server built with FastMCP and Biopython",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/jessicalh/biosciences-mcp",
     packages=find_packages(),
     classifiers=[
-        "Development Status :: 4 - Beta",
+        "Development Status :: 3 - Alpha",
         "Intended Audience :: Science/Research",
         "Topic :: Scientific/Engineering :: Bio-Informatics",
         "License :: OSI Approved :: MIT License",

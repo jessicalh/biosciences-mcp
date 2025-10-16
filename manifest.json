@@ -2,12 +2,12 @@
   "manifest_version": "0.2",
   "name": "biosciences-toolkit",
   "display_name": "Biosciences Toolkit",
-  "version": "1.0.0",
-  "description": "Comprehensive bioinformatics tools for sequence analysis, protein analysis, and molecular biology",
-  "long_description": "This MCP server provides a complete suite of bioinformatics tools built on Biopython and other popular Python libraries. Features include DNA/RNA sequence analysis, protein characterization, sequence alignment, ORF finding, BLAST searches, and more. Perfect for genomics research, computational biology, and bioinformatics workflows.",
+  "version": "0.1.0-alpha",
+  "description": "Alpha version bioinformatics tools built with FastMCP and Biopython",
+  "long_description": "Alpha version MCP server for bioinformatics, tested locally only. Built with FastMCP (>=0.3.0) and Biopython (>=1.85). Includes DNA/RNA sequence analysis, protein characterization, sequence alignment, ORF finding, and BLAST searches.",
   "author": {
-    "name": "Jessica LH",
-    "email": "jessicalh@github.com",
+    "name": "Jessica H",
+    "email": "ke7gad@gmail.com",
     "url": "https://github.com/jessicalh/biosciences-mcp"
   },
   "server": {
